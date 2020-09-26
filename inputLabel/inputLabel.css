@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+}
+
+#input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+label {
+    position: absolute;
+}
+
+#input:focus {
+    outline: none;
+}
+
+@keyframes anim {
+    from{top: 0;}
+    to {top: -20px;}
+}

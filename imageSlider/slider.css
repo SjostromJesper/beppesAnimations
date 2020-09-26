@@ -1,0 +1,61 @@
+:root {
+    --image-size: 300px;
+}
+
+.slider-image {
+    background-size: cover;
+
+    height: var(--image-size);
+    width: var(--image-size);
+
+    animation: anim 15s infinite;
+
+    background-image: url("https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/v1584388937/shape/mentalfloss/536413-gettyimages-1077470274.jpg?itok=NoDcW5uz");
+}
+
+@keyframes anim {
+    1% {background-image: url("https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/v1584388937/shape/mentalfloss/536413-gettyimages-1077470274.jpg?itok=NoDcW5uz");}
+    33% {background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg");}
+    66% {background-image: url("https://hips.hearstapps.com/countryliving.cdnds.net/17/47/1511194376-cavachon-puppy-christmas.jpg");}
+}
+
+
+
+.slider-two {
+    position: relative;
+//left: -900px;
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    overflow: hidden;
+
+}
+
+.image {
+    max-width: 300px;
+}
+
+.wheel {
+    display: flex;
+    position: absolute;
+    animation: anim2 15s ease-in infinite;
+}
+
+@keyframes anim2 {
+    0% {
+        left: 0;
+    }
+    15% {
+        left: -300px;
+    }
+    30% {
+        left: -300px;
+    }
+    45% {
+        left: -600px;
+    }
+    75% {
+        left: -600px;
+    }
+}
